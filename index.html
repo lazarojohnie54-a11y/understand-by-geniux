@@ -4,394 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Understand by Geniux - AI Learning Platform</title>
-    <meta name="description" content="Jifunze AI kwa Kiswahili - video za tutorial, AI tools, updates, na vitendaji. Bure kabisa.">
-    <link rel="stylesheet" href="style.css">
+    <style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--p:#6C63FF;--s:#FF6584;--a:#00D4AA;--d:#080810;--c:#111128;--t:#e8e8ff;--td:#7878a8;--b:rgba(108,99,255,.15)}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--d);color:var(--t);line-height:1.7;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 10% 20%,rgba(108,99,255,.06) 0%,transparent 50%),radial-gradient(ellipse at 90% 80%,rgba(255,101,132,.04) 0%,transparent 50%);z-index:-1;animation:bg 12s ease-in-out infinite alternate}
+@keyframes bg{0%{transform:scale(1)}100%{transform:scale(1.05)}}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--d)}::-webkit-scrollbar-thumb{background:var(--p);border-radius:3px}
+
+header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative}
+header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--p),var(--s),transparent)}
+.hc{max-width:800px}
+.badge{display:inline-block;padding:.4rem 1.2rem;background:rgba(108,99,255,.15);border:1px solid rgba(108,99,255,.3);border-radius:50px;font-size:.75rem;font-weight:700;color:var(--p);letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem}
+header h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:900;line-height:1;margin-bottom:1rem;background:linear-gradient(135deg,#fff 0%,#a8a8ff 50%,#ff6584 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header h1 span{background:linear-gradient(135deg,var(--p),var(--a));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header p{font-size:1.15rem;color:var(--td);max-width:600px;margin:0 auto 2rem}
+.hs{display:flex;justify-content:center;gap:2rem;margin-bottom:2rem;flex-wrap:wrap}
+.st{text-align:center}.st .n{font-size:2rem;font-weight:800;color:var(--p)}.st .l{font-size:.75rem;color:var(--td);text-transform:uppercase;letter-spacing:1px}
+.hb{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:1rem 2rem;border-radius:12px;font-weight:700;font-size:1rem;text-decoration:none;transition:all .3s;border:none;cursor:pointer}
+.bp{background:linear-gradient(135deg,var(--p),#8b5cf6);color:#fff;box-shadow:0 4px 20px rgba(108,99,255,.4)}
+.bp:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(108,99,255,.5)}
+.bs{background:rgba(255,255,255,.05);color:var(--t);border:1px solid var(--b)}
+.bs:hover{background:rgba(255,255,255,.1);border-color:var(--p)}
+
+.sn{position:sticky;top:0;z-index:100;background:rgba(8,8,16,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--b);padding:.75rem 2rem;display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none}
+.sn::-webkit-scrollbar{display:none}
+.nl{padding:.5rem 1rem;color:var(--td);text-decoration:none;font-size:.82rem;font-weight:600;border-radius:8px;white-space:nowrap;transition:all .3s}
+.nl:hover,.nl.a{color:var(--p);background:rgba(108,99,255,.1)}
+
+.m{padding:4rem 2rem;max-width:1200px;margin:0 auto}
+.mh{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--b)}
+.mh h2{font-size:2rem;font-weight:800;margin-bottom:.5rem;background:linear-gradient(135deg,#fff,var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.md{color:var(--td);font-size:1.05rem;margin-bottom:1rem}
+.ms{display:flex;gap:1.5rem;font-size:.85rem;color:var(--td)}
+
+.lg{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:1.5rem}
+.lc{background:var(--c);border-radius:16px;overflow:hidden;border:1px solid var(--b);transition:all .4s cubic-bezier(.4,0,.2,1)}
+.lc:hover{transform:translateY(-4px);border-color:rgba(108,99,255,.4);box-shadow:0 0 40px rgba(108,99,255,.15)}
+.lv{position:relative;padding-bottom:56.25%;background:#000}
+.lv iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.vo{position:absolute;bottom:0;left:0;right:0;padding:.75rem;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+.dur{background:rgba(0,0,0,.7);padding:.2rem .6rem;border-radius:4px;font-size:.75rem;font-weight:600}
+.lb{padding:.2rem .6rem;border-radius:4px;font-size:.7rem;font-weight:700;color:#fff}
+.li{padding:1.25rem}
+.li h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;color:#fff}
+.li p{color:var(--td);font-size:.85rem;margin-bottom:1rem;line-height:1.5}
+.la{display:flex;gap:.5rem;flex-wrap:wrap}
+.dw{padding:.5rem 1rem;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none;transition:all .3s;display:inline-flex;align-items:center;gap:.3rem;background:linear-gradient(135deg,var(--p),#8b5cf6);color:#fff}
+.dw:hover{transform:scale(1.05);box-shadow:0 4px 15px rgba(108,99,255,.4)}
+.dw.mp3{background:linear-gradient(135deg,var(--a),#00b894)}
+.dw.mp3:hover{box-shadow:0 4px 15px rgba(0,212,170,.4)}
+
+.cs{padding:4rem 2rem;text-align:center;border-top:1px solid var(--b)}
+.cs h2{font-size:2rem;font-weight:800;margin-bottom:1rem;background:linear-gradient(135deg,#fff,var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cs p{color:var(--td);margin-bottom:2rem}
+.cb{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.ct{display:inline-flex;align-items:center;gap:.5rem;padding:1rem 2rem;border-radius:12px;font-weight:700;font-size:1rem;text-decoration:none;transition:all .3s}
+.ct.wa{background:#25D366;color:#fff}.ct.em{background:#EA4335;color:#fff}
+.ct:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.3)}
+
+footer{text-align:center;padding:2rem;border-top:1px solid var(--b);color:var(--td);font-size:.85rem}
+footer .br{background:linear-gradient(135deg,var(--p),var(--s));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:800}
+
+@media(max-width:768px){.lg{grid-template-columns:1fr}.hs{gap:1rem}.st .n{font-size:1.5rem}.m{padding:2rem 1rem}.sn{padding:.5rem 1rem}}
+    </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="hero-content">
+    <div class="hc">
         <div class="badge">Powered by Lazaro Intelligence</div>
         <h1>Understand <span>by Geniux</span></h1>
         <p>Jifunze AI kwa Kiswahili — video za tutorial za kitaalamu, AI tools, updates, na vitendaji. Bure kabisa, kutoka mtaalamu.</p>
-        <div class="hero-stats">
-            <div class="stat"><div class="number">5</div><div class="label">Modules</div></div>
-            <div class="stat"><div class="number">17</div><div class="label">Lessons</div></div>
-            <div class="stat"><div class="number">5+</div><div class="label">Hours</div></div>
-            <div class="stat"><div class="number">100%</div><div class="label">Bure</div></div>
+        <div class="hs">
+            <div class="st"><div class="n">5</div><div class="l">Modules</div></div>
+            <div class="st"><div class="n">17</div><div class="l">Lessons</div></div>
+            <div class="st"><div class="n">5+</div><div class="l">Hours</div></div>
+            <div class="st"><div class="n">100%</div><div class="l">Bure</div></div>
         </div>
-        <div class="hero-buttons">
-            <a href="#module1" class="btn btn-primary">Anza Soma Sasa</a>
-            <a href="#contact" class="btn btn-secondary">Wasiliana Nasi</a>
+        <div class="hb">
+            <a href="#m1" class="btn bp">Anza Soma Sasa</a>
+            <a href="#contact" class="btn bs">Wasiliana Nasi</a>
         </div>
     </div>
 </header>
 
-<!-- STICKY NAV -->
-<nav class="sticky-nav" id="mainNav">
-    <a href="#module1" class="nav-link active">Module 1: Msingi wa AI</a>
-    <a href="#module2" class="nav-link">Module 2: AI Tools</a>
-    <a href="#module3" class="nav-link">Module 3: AI Updates</a>
-    <a href="#module4" class="nav-link">Module 4: Vitendaji vya AI</a>
-    <a href="#module5" class="nav-link">Module 5: AI Ethics</a>
+<nav class="sn" id="nav">
+    <a href="#m1" class="nl a">Module 1: Msingi wa AI</a>
+    <a href="#m2" class="nl">Module 2: AI Tools</a>
+    <a href="#m3" class="nl">Module 3: AI Updates</a>
+    <a href="#m4" class="nl">Module 4: Vitendaji</a>
+    <a href="#m5" class="nl">Module 5: AI Ethics</a>
 </nav>
 
 <!-- MODULE 1 -->
-<div class="module" id="module1">
-    <div class="module-header">
-        <h2>Module 1: Msingi wa AI</h2>
-        <p class="module-desc">Jifunze nini ni AI, historia yake, na jinsi inavyofanya kazi</p>
-        <div class="module-stats"><span>3 Masomo</span><span>~38 Dakika</span></div>
-    </div>
-    <div class="lessons-grid">
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/f2RXLBfUIaM" title="Nini maana ya AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">15:30</span><span class="level-badge" style="background:#22c55e">Beginner</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>1.1 - Nini maana ya AI?</h3>
-                <p>Maelezo ya kimsingi kuhusu Artificial Intelligence - nini ni AI, tofauti kati ya AI, Machine Learning, na Deep Learning.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=f2RXLBfUIaM" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=f2RXLBfUIaM" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/f2RXLBfUIaM" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+<div class="m" id="m1">
+    <div class="mh"><h2>Module 1: Msingi wa AI</h2><p class="md">Jifunze nini ni AI, historia yake, na jinsi inavyofanya kazi</p><div class="ms"><span>3 Masomo</span><span>~38 Dakika</span></div></div>
+    <div class="lg">
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/Ux2X2Te20Wo" title="AI Full Course" allowfullscreen></iframe><div class="vo"><span class="dur">47:00</span><span class="lb" style="background:#22c55e">Beginner</span></div></div>
+            <div class="li"><h3>1.1 - Nini maana ya AI?</h3><p>Maelezo kamili ya Artificial Intelligence — nini ni AI, ML, na Deep Learning.</p><div class="la"><a href="https://www.youtube.com/watch?v=Ux2X2Te20Wo" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=Ux2X2Te20Wo" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/dY_hS2zOLqA" title="Historia ya AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">12:45</span><span class="level-badge" style="background:#22c55e">Beginner</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>1.2 - Historia ya AI</h3>
-                <p>Kutoka Alan Turing hadi ChatGPT - safari ya AI kwa miaka 80.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=dY_hS2zOLqA" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=dY_hS2zOLqA" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/dY_hS2zOLqA" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/LGCZ-Fhm48c" title="AI Full Course 2025" allowfullscreen></iframe><div class="vo"><span class="dur">10:00:00</span><span class="lb" style="background:#22c55e">Beginner</span></div></div>
+            <div class="li"><h3>1.2 - AI Full Course 2025</h3><p>AI Full Course kwa saa 10 — kutoka mwanzo hadi advanced, bila coding.</p><div class="la"><a href="https://www.youtube.com/watch?v=LGCZ-Fhm48c" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=LGCZ-Fhm48c" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/z-Ei7LKAjzk" title="Aina za AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">10:20</span><span class="level-badge" style="background:#22c55e">Beginner</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>1.3 - Aina za AI</h3>
-                <p>Narrow AI, General AI, Super AI - tofauti na mifano halisi.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=z-Ei7LKAjzk" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=z-Ei7LKAjzk" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/z-Ei7LKAjzk" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/QqDIgjpUogA" title="AI Full Course Intellipaat" allowfullscreen></iframe><div class="vo"><span class="dur">5:00:00</span><span class="lb" style="background:#22c55e">Beginner</span></div></div>
+            <div class="li"><h3>1.3 - AI Full Course Intellipaat</h3><p>AI Full Course ya Intellipaat — neural networks hadi advanced AI projects.</p><div class="la"><a href="https://www.youtube.com/watch?v=QqDIgjpUogA" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=QqDIgjpUogA" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
     </div>
 </div>
 
 <!-- MODULE 2 -->
-<div class="module" id="module2">
-    <div class="module-header">
-        <h2>Module 2: AI Tools - Zana za AI</h2>
-        <p class="module-desc">Jifunze zana muhimu za AI kwa kila kazi</p>
-        <div class="module-stats"><span>5 Masomo</span><span>~92 Dakika</span></div>
-    </div>
-    <div class="lessons-grid">
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/48h57PspB2k" title="ChatGPT Tutorial" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">20:15</span><span class="level-badge" style="background:#22c55e">Beginner</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>2.1 - ChatGPT - Mwalimu wa AI</h3>
-                <p>Jinsi ya kutumia ChatGPT kwa kila kitu - kuandika, kupanga, kufundisha.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=48h57PspB2k" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=48h57PspB2k" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/48h57PspB2k" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+<div class="m" id="m2">
+    <div class="mh"><h2>Module 2: AI Tools - Zana za AI</h2><p class="md">Jifunze zana muhimu za AI kwa kila kazi</p><div class="ms"><span>5 Masomo</span><span>~92 Dakika</span></div></div>
+    <div class="lg">
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/BVR4rb5aDGE" title="Suno AI Tutorial" allowfullscreen></iframe><div class="vo"><span class="dur">18:30</span><span class="lb" style="background:#f59e0b">Intermediate</span></div></div>
+            <div class="li"><h3>2.1 - Suno AI - Kutengeneza Nyimbo</h3><p>Tengeneza nyimbo za AI kwa maandishi tu — bure kabisa.</p><div class="la"><a href="https://www.youtube.com/watch?v=BVR4rb5aDGE" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=BVR4rb5aDGE" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/BVR4rb5aDGE" title="Suno AI Tutorial" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">18:30</span><span class="level-badge" style="background:#f59e0b">Intermediate</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>2.2 - Suno AI - Kutengeneza Nyimbo</h3>
-                <p>Tengeneza nyimbo za AI kwa maandishi tu - bure kabisa.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=BVR4rb5aDGE" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=BVR4rb5aDGE" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/BVR4rb5aDGE" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/e2VEkTpOlR8" title="Pika Labs Tutorial" allowfullscreen></iframe><div class="vo"><span class="dur">14:20</span><span class="lb" style="background:#f59e0b">Intermediate</span></div></div>
+            <div class="li"><h3>2.2 - Pika Labs - Kutengeneza Video</h3><p>Text-to-video AI — tengeneza video kutoka maandishi.</p><div class="la"><a href="https://www.youtube.com/watch?v=e2VEkTpOlR8" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=e2VEkTpOlR8" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/e2VEkTpOlR8" title="Pika Labs Tutorial" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">14:20</span><span class="level-badge" style="background:#f59e0b">Intermediate</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>2.3 - Pika Labs - Kutengeneza Video</h3>
-                <p>Text-to-video AI - tengeneza video kutoka maandishi.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=e2VEkTpOlR8" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=e2VEkTpOlR8" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/e2VEkTpOlR8" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/hk8l3ISfwRM" title="Runway ML Tutorial" allowfullscreen></iframe><div class="vo"><span class="dur">22:10</span><span class="lb" style="background:#ef4444">Advanced</span></div></div>
+            <div class="li"><h3>2.3 - Runway ML - Video AI ya Hali ya Juu</h3><p>Advanced AI video generation na editing.</p><div class="la"><a href="https://www.youtube.com/watch?v=hk8l3ISfwRM" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=hk8l3ISfwRM" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/hk8l3ISfwRM" title="Runway ML Tutorial" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">22:10</span><span class="level-badge" style="background:#ef4444">Advanced</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>2.4 - Runway ML - Video AI ya Hali ya Juu</h3>
-                <p>Advanced AI video generation na editing.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=hk8l3ISfwRM" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=hk8l3ISfwRM" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/hk8l3ISfwRM" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/48h57PspB2k" title="ChatGPT Tutorial" allowfullscreen></iframe><div class="vo"><span class="dur">20:15</span><span class="lb" style="background:#22c55e">Beginner</span></div></div>
+            <div class="li"><h3>2.4 - ChatGPT - Mwalimu wa AI</h3><p>Jinsi ya kutumia ChatGPT kwa kila kitu — kuandika, kupanga, kufundisha.</p><div class="la"><a href="https://www.youtube.com/watch?v=48h57PspB2k" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=48h57PspB2k" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/rnKj5sMCLls" title="Leonardo AI Tutorial" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">16:45</span><span class="level-badge" style="background:#f59e0b">Intermediate</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>2.5 - Leonardo AI - Kutengeneza Picha</h3>
-                <p>AI image generation - picha za hali ya juu kwa maandishi.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=rnKj5sMCLls" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=rnKj5sMCLls" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/rnKj5sMCLls" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/rnKj5sMCLls" title="Leonardo AI Tutorial" allowfullscreen></iframe><div class="vo"><span class="dur">16:45</span><span class="lb" style="background:#f59e0b">Intermediate</span></div></div>
+            <div class="li"><h3>2.5 - Leonardo AI - Kutengeneza Picha</h3><p>AI image generation — picha za hali ya juu kwa maandishi.</p><div class="la"><a href="https://www.youtube.com/watch?v=rnKj5sMCLls" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=rnKj5sMCLls" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
     </div>
 </div>
 
 <!-- MODULE 3 -->
-<div class="module" id="module3">
-    <div class="module-header">
-        <h2>Module 3: AI Updates - Mabadiliko Mapya</h2>
-        <p class="module-desc">Kaa updated na mabadiliko mapya ya AI</p>
-        <div class="module-stats"><span>3 Masomo</span><span>~57 Dakika</span></div>
-    </div>
-    <div class="lessons-grid">
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/T0-z7WJK5fY" title="AI Updates 2025" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">25:00</span><span class="level-badge" style="background:#6C63FF">All Levels</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>3.1 - AI Updates 2025/2026</h3>
-                <p>Mabadiliko makubwa ya AI mwaka 2025 na 2026.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=T0-z7WJK5fY" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=T0-z7WJK5fY" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/T0-z7WJK5fY" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+<div class="m" id="m3">
+    <div class="mh"><h2>Module 3: AI Updates - Mabadiliko Mapya</h2><p class="md">Kaa updated na mabadiliko mapya ya AI</p><div class="ms"><span>3 Masomo</span><span>~57 Dakika</span></div></div>
+    <div class="lg">
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/HwCGJeLEnBo" title="Sartify Swahili AI" allowfullscreen></iframe><div class="vo"><span class="dur">12:30</span><span class="lb" style="background:#6C63FF">All Levels</span></div></div>
+            <div class="li"><h3>3.1 - AI kwa Kiswahili - Sartify</h3><p>AI inayozungumza Kiswahili — mradi wa Tanzania.</p><div class="la"><a href="https://www.youtube.com/watch?v=HwCGJeLEnBo" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=HwCGJeLEnBo" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/HwCGJeLEnBo" title="Sartify Swahili AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">12:30</span><span class="level-badge" style="background:#6C63FF">All Levels</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>3.2 - AI kwa Kiswahili - Sartify</h3>
-                <p>AI inayozungumza Kiswahili - mradi wa Tanzania.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=HwCGJeLEnBo" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=HwCGJeLEnBo" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/HwCGJeLEnBo" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/L_Guz73e6fw" title="Open Source AI Models" allowfullscreen></iframe><div class="vo"><span class="dur">19:15</span><span class="lb" style="background:#ef4444">Advanced</span></div></div>
+            <div class="li"><h3>3.2 - Open Source AI Models</h3><p>Llama, Mistral, DeepSeek — AI models za bure.</p><div class="la"><a href="https://www.youtube.com/watch?v=L_Guz73e6fw" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=L_Guz73e6fw" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/L_Guz73e6fw" title="Open Source AI Models" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">19:15</span><span class="level-badge" style="background:#ef4444">Advanced</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>3.3 - Open Source AI Models</h3>
-                <p>Llama, Mistral, DeepSeek - AI models za bure.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=L_Guz73e6fw" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=L_Guz73e6fw" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/L_Guz73e6fw" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/iiAAliuMLUo" title="AI in Swahili" allowfullscreen></iframe><div class="vo"><span class="dur">15:00</span><span class="lb" style="background:#6C63FF">All Levels</span></div></div>
+            <div class="li"><h3>3.3 - AI in Swahili</h3><p>Maelezo ya AI kwa lugha ya Kiswahili — nini ni AI na inavyofanya kazi.</p><div class="la"><a href="https://www.youtube.com/watch?v=iiAAliuMLUo" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=iiAAliuMLUo" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
     </div>
 </div>
 
 <!-- MODULE 4 -->
-<div class="module" id="module4">
-    <div class="module-header">
-        <h2>Module 4: Vitendaji vya AI - AI in Action</h2>
-        <p class="module-desc">Mifano halisi ya kutumia AI kutengeneza maudhui</p>
-        <div class="module-stats"><span>4 Masomo</span><span>~104 Dakika</span></div>
-    </div>
-    <div class="lessons-grid">
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/JvCvM4ZpQ3Y" title="Kutengeneza Website kwa AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">30:00</span><span class="level-badge" style="background:#f59e0b">Intermediate</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>4.1 - Kutengeneza Website kwa AI</h3>
-                <p>Tengeneza website kamili kwa AI bila kuandika code.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=JvCvM4ZpQ3Y" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=JvCvM4ZpQ3Y" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/JvCvM4ZpQ3Y" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+<div class="m" id="m4">
+    <div class="mh"><h2>Module 4: Vitendaji vya AI - AI in Action</h2><p class="md">Mifano halisi ya kutumia AI kutengeneza maudhui</p><div class="ms"><span>4 Masomo</span><span>~104 Dakika</span></div></div>
+    <div class="lg">
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/SpTMxKvfAuw" title="Suno AI Advanced" allowfullscreen></iframe><div class="vo"><span class="dur">24:30</span><span class="lb" style="background:#f59e0b">Intermediate</span></div></div>
+            <div class="li"><h3>4.1 - Kutengeneza Nyimbo kwa Suno AI</h3><p>Mchakato mzima wa kutengeneza wimbo kwa Suno AI — advanced features.</p><div class="la"><a href="https://www.youtube.com/watch?v=SpTMxKvfAuw" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=SpTMxKvfAuw" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/SpTMxKvfAuw" title="Kutengeneza Nyimbo kwa AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">24:30</span><span class="level-badge" style="background:#f59e0b">Intermediate</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>4.2 - Kutengeneza Nyimbo kwa AI</h3>
-                <p>Mchakato mzima wa kutengeneza wimbo kwa Suno AI.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=SpTMxKvfAuw" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=SpTMxKvfAuw" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/SpTMxKvfAuw" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/oPh6HKEEGMc" title="Pika Labs Video" allowfullscreen></iframe><div class="vo"><span class="dur">28:15</span><span class="lb" style="background:#ef4444">Advanced</span></div></div>
+            <div class="li"><h3>4.2 - Kutengeneza Video kwa AI</h3><p>Kutoka script hadi video kamili kwa AI tools.</p><div class="la"><a href="https://www.youtube.com/watch?v=oPh6HKEEGMc" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=oPh6HKEEGMc" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/oPh6HKEEGMc" title="Kutengeneza Video kwa AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">28:15</span><span class="level-badge" style="background:#ef4444">Advanced</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>4.3 - Kutengeneza Video kwa AI</h3>
-                <p>Kutoka script hadi video kamili kwa AI tools.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=oPh6HKEEGMc" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=oPh6HKEEGMc" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/oPh6HKEEGMc" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/JvCvM4ZpQ3Y" title="Website kwa AI" allowfullscreen></iframe><div class="vo"><span class="dur">30:00</span><span class="lb" style="background:#f59e0b">Intermediate</span></div></div>
+            <div class="li"><h3>4.3 - Kutengeneza Website kwa AI</h3><p>Tengeneza website kamili kwa AI bila kuandika code.</p><div class="la"><a href="https://www.youtube.com/watch?v=JvCvM4ZpQ3Y" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=JvCvM4ZpQ3Y" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/Mv3L5VnQdFc" title="AI Business Ideas" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">21:00</span><span class="level-badge" style="background:#6C63FF">All Levels</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>4.4 - AI Business Ideas 2026</h3>
-                <p>Mawazo ya biashara ya AI yanayoweza kukufanya pesa.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=Mv3L5VnQdFc" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=Mv3L5VnQdFc" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/Mv3L5VnQdFc" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/Mv3L5VnQdFc" title="AI Business Ideas" allowfullscreen></iframe><div class="vo"><span class="dur">21:00</span><span class="lb" style="background:#6C63FF">All Levels</span></div></div>
+            <div class="li"><h3>4.4 - AI Business Ideas 2026</h3><p>Mawazo ya biashara ya AI yanayoweza kukufanya pesa.</p><div class="la"><a href="https://www.youtube.com/watch?v=Mv3L5VnQdFc" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=Mv3L5VnQdFc" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
     </div>
 </div>
 
 <!-- MODULE 5 -->
-<div class="module" id="module5">
-    <div class="module-header">
-        <h2>Module 5: AI Ethics & Future</h2>
-        <p class="module-desc">Maadili, hatari, na mustakabali wa AI</p>
-        <div class="module-stats"><span>2 Masomo</span><span>~41 Dakika</span></div>
-    </div>
-    <div class="lessons-grid">
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/Uq9oHckdNqY" title="AI Ethics" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">17:45</span><span class="level-badge" style="background:#6C63FF">All Levels</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>5.1 - AI Ethics - Maadili ya AI</h3>
-                <p>AI ni nzuri au mbaya? Maadili na hatari za AI.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=Uq9oHckdNqY" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=Uq9oHckdNqY" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/Uq9oHckdNqY" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+<div class="m" id="m5">
+    <div class="mh"><h2>Module 5: AI Ethics & Future</h2><p class="md">Maadili, hatari, na mustakabali wa AI</p><div class="ms"><span>2 Masomo</span><span>~41 Dakika</span></div></div>
+    <div class="lg">
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/Uq9oHckdNqY" title="AI Ethics" allowfullscreen></iframe><div class="vo"><span class="dur">17:45</span><span class="lb" style="background:#6C63FF">All Levels</span></div></div>
+            <div class="li"><h3>5.1 - AI Ethics - Maadili ya AI</h3><p>AI ni nzuri au mbaya? Maadili na hatari za AI.</p><div class="la"><a href="https://www.youtube.com/watch?v=Uq9oHckdNqY" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=Uq9oHckdNqY" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
-        <div class="lesson-card">
-            <div class="lesson-video">
-                <iframe src="https://www.youtube.com/embed/5dZ_lvDgevk" title="Mustakabali wa AI" allowfullscreen></iframe>
-                <div class="video-overlay"><span class="duration">23:30</span><span class="level-badge" style="background:#6C63FF">All Levels</span></div>
-            </div>
-            <div class="lesson-info">
-                <h3>5.2 - Mustakabali wa AI</h3>
-                <p>AI itakuwaje miaka 10 ijayo? AGI, singularity, na zaidi.</p>
-                <div class="lesson-actions">
-                    <a href="https://www.youtube.com/watch?v=5dZ_lvDgevk" target="_blank" class="btn-watch">YouTube</a>
-                    <a href="https://ssyoutube.com/watch?v=5dZ_lvDgevk" target="_blank" class="btn-download">Download</a>
-                    <a href="https://y2mate.com/youtube/5dZ_lvDgevk" target="_blank" class="btn-mp3">MP3</a>
-                </div>
-            </div>
+        <div class="lc">
+            <div class="lv"><iframe src="https://www.youtube.com/embed/5dZ_lvDgevk" title="Mustakabali wa AI" allowfullscreen></iframe><div class="vo"><span class="dur">23:30</span><span class="lb" style="background:#6C63FF">All Levels</span></div></div>
+            <div class="li"><h3>5.2 - Mustakabali wa AI</h3><p>AI itakuwaje miaka 10 ijayo? AGI, singularity, na zaidi.</p><div class="la"><a href="https://www.youtube.com/watch?v=5dZ_lvDgevk" target="_blank" class="dw">Download Video</a><a href="https://www.youtube.com/watch?v=5dZ_lvDgevk" target="_blank" class="dw mp3">Download MP3</a></div></div>
         </div>
-
     </div>
 </div>
 
 <!-- CONTACT -->
-<section class="contact-section" id="contact">
+<section class="cs" id="contact">
     <h2>Wasiliana Nasi</h2>
     <p>Kwa maswali, msaada, au ushirikiano — tupigie au tutumie email</p>
-    <div class="contact-buttons">
-        <a href="https://wa.me/255657323904" target="_blank" class="contact-btn whatsapp">WhatsApp: 0657 323 904</a>
-        <a href="mailto:lazarojohnie54@gmail.com" target="_blank" class="contact-btn email">lazarojohnie54@gmail.com</a>
+    <div class="cb">
+        <a href="https://wa.me/255657323904" target="_blank" class="ct wa">WhatsApp: 0657 323 904</a>
+        <a href="mailto:lazarojohnie54@gmail.com" target="_blank" class="ct em">lazarojohnie54@gmail.com</a>
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>&copy; 2026 <span class="brand">Understand by Geniux</span>. Haki zote zilindikwa.</p>
-    <p>Dar es Salaam, Tanzania — Powered by <span class="brand">Lazaro Intelligence</span></p>
+    <p>&copy; 2026 <span class="br">Understand by Geniux</span>. Haki zote zilindikwa.</p>
+    <p>Dar es Salaam, Tanzania — Powered by <span class="br">Lazaro Intelligence</span></p>
 </footer>
 
 <script>
-const sections = document.querySelectorAll('.module');
-const navLinks = document.querySelectorAll('.nav-link');
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => { if (scrollY >= s.offsetTop - 200) current = s.id; });
-    navLinks.forEach(l => { l.classList.remove('active'); if (l.getAttribute('href') === '#' + current) l.classList.add('active'); });
+const sections=document.querySelectorAll('.module');
+const navLinks=document.querySelectorAll('.nl');
+window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(scrollY>=s.offsetTop-200)current=s.id});
+    navLinks.forEach(l=>{l.classList.remove('a');if(l.getAttribute('href')==='#'+current)l.classList.add('a')});
 });
 </script>
 </body>
