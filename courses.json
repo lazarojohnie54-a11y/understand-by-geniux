@@ -1,0 +1,168 @@
+{
+  "module1": {
+    "title": "📘 Module 1: Msingi wa AI",
+    "description": "Jifunze nini ni AI, historia yake, na jinsi inavyofanya kazi",
+    "lessons": [
+      {
+        "id": "lesson1-1",
+        "title": "1.1 - Nini maana ya AI?",
+        "description": "Maelezo ya kimsingi kuhusu Artificial Intelligence - nini ni AI, tofauti kati ya AI, Machine Learning, na Deep Learning.",
+        "video_id": "f2RXLBfUIaM",
+        "duration": "15:30",
+        "level": "Beginner"
+      },
+      {
+        "id": "lesson1-2",
+        "title": "1.2 - Historia ya AI",
+        "description": "Kutoka Alan Turing hadi ChatGPT - safari ya AI kwa miaka 80.",
+        "video_id": "dY_hS2zOLqA",
+        "duration": "12:45",
+        "level": "Beginner"
+      },
+      {
+        "id": "lesson1-3",
+        "title": "1.3 - Aina za AI",
+        "description": "Narrow AI, General AI, Super AI - tofauti na mifano halisi.",
+        "video_id": "z-Ei7LKAjzk",
+        "duration": "10:20",
+        "level": "Beginner"
+      }
+    ]
+  },
+  "module2": {
+    "title": "📗 Module 2: AI Tools - Zana za AI",
+    "description": "Jifunze zana muhimu za AI kwa kila kazi",
+    "lessons": [
+      {
+        "id": "lesson2-1",
+        "title": "2.1 - ChatGPT - Mwalimu wa AI",
+        "description": "Jinsi ya kutumia ChatGPT kwa kila kitu - kuandika, kupanga, kufundisha.",
+        "video_id": "48h57PspB2k",
+        "duration": "20:15",
+        "level": "Beginner"
+      },
+      {
+        "id": "lesson2-2",
+        "title": "2.2 - Suno AI - Kutengeneza Nyimbo",
+        "description": "Tengeneza nyimbo za AI kwa maandishi tu - bure kabisa.",
+        "video_id": "BVR4rb5aDGE",
+        "duration": "18:30",
+        "level": "Intermediate"
+      },
+      {
+        "id": "lesson2-3",
+        "title": "2.3 - Pika Labs - Kutengeneza Video",
+        "description": "Text-to-video AI - tengeneza video kutoka maandishi.",
+        "video_id": "e2VEkTpOlR8",
+        "duration": "14:20",
+        "level": "Intermediate"
+      },
+      {
+        "id": "lesson2-4",
+        "title": "2.4 - Runway ML - Video AI ya Hali ya Juu",
+        "description": "Advanced AI video generation na editing.",
+        "video_id": "hk8l3ISfwRM",
+        "duration": "22:10",
+        "level": "Advanced"
+      },
+      {
+        "id": "lesson2-5",
+        "title": "2.5 - Leonardo AI - Kutengeneza Picha",
+        "description": "AI image generation - picha za hali ya juu kwa maandishi.",
+        "video_id": "rnKj5sMCLls",
+        "duration": "16:45",
+        "level": "Intermediate"
+      }
+    ]
+  },
+  "module3": {
+    "title": "📙 Module 3: AI Updates - Mabadiliko Mapya",
+    "description": "Kaa updated na mabadiliko mapya ya AI",
+    "lessons": [
+      {
+        "id": "lesson3-1",
+        "title": "3.1 - AI Updates 2025/2026",
+        "description": "Mabadiliko makubwa ya AI mwaka 2025 na 2026.",
+        "video_id": "T0-z7WJK5fY",
+        "duration": "25:00",
+        "level": "All Levels"
+      },
+      {
+        "id": "lesson3-2",
+        "title": "3.2 - AI kwa Kiswahili - Sartify",
+        "description": "AI inayozungumza Kiswahili - mradi wa Tanzania.",
+        "video_id": "HwCGJeLEnBo",
+        "duration": "12:30",
+        "level": "All Levels"
+      },
+      {
+        "id": "lesson3-3",
+        "title": "3.3 - Open Source AI Models",
+        "description": "Llama, Mistral, DeepSeek - AI models za bure.",
+        "video_id": "L_Guz73e6fw",
+        "duration": "19:15",
+        "level": "Advanced"
+      }
+    ]
+  },
+  "module4": {
+    "title": "📕 Module 4: Vitendaji vya AI - AI in Action",
+    "description": "Mifano halisi ya kutumia AI kutengeneza maudhui",
+    "lessons": [
+      {
+        "id": "lesson4-1",
+        "title": "4.1 - Kutengeneza Website kwa AI",
+        "description": "Tengeneza website kamili kwa AI bila kuandika code.",
+        "video_id": "JvCvM4ZpQ3Y",
+        "duration": "30:00",
+        "level": "Intermediate"
+      },
+      {
+        "id": "lesson4-2",
+        "title": "4.2 - Kutengeneza Nyimbo kwa AI",
+        "description": "Mchakato mzima wa kutengeneza wimbo kwa Suno AI.",
+        "video_id": "SpTMxKvfAuw",
+        "duration": "24:30",
+        "level": "Intermediate"
+      },
+      {
+        "id": "lesson4-3",
+        "title": "4.3 - Kutengeneza Video kwa AI",
+        "description": "Kutoka script hadi video kamili kwa AI tools.",
+        "video_id": "oPh6HKEEGMc",
+        "duration": "28:15",
+        "level": "Advanced"
+      },
+      {
+        "id": "lesson4-4",
+        "title": "4.4 - AI Business Ideas 2026",
+        "description": "Mawazo ya biashara ya AI yanayoweza kukufanya pesa.",
+        "video_id": "Mv3L5VnQdFc",
+        "duration": "21:00",
+        "level": "All Levels"
+      }
+    ]
+  },
+  "module5": {
+    "title": "📓 Module 5: AI Ethics & Future",
+    "description": "Maadili, hatari, na mustakabali wa AI",
+    "lessons": [
+      {
+        "id": "lesson5-1",
+        "title": "5.1 - AI Ethics - Maadili ya AI",
+        "description": "AI ni nzuri au mbaya? Maadili na hatari za AI.",
+        "video_id": "Uq9oHckdNqY",
+        "duration": "17:45",
+        "level": "All Levels"
+      },
+      {
+        "id": "lesson5-2",
+        "title": "5.2 - Mustakabali wa AI",
+        "description": "AI itakuwaje miaka 10 ijayo? AGI, singularity, na zaidi.",
+        "video_id": "5dZ_lvDgevk",
+        "duration": "23:30",
+        "level": "All Levels"
+      }
+    ]
+  }
+}
